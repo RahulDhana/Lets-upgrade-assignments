@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4t</title>
+    <h1>This is the difference between var,let and const</h1>
+</head>
+<body>
+    <script>
+        //The scope is global when a var variable is declared outside a function. This means that any variable that is declared with var outside a function block is available for use in the whole window.
+        var name;
+        name="rahul";
+        //a variable declared in a block with let  is only available for use within that block
+        {
+            let name="mohan";
+            console.log("using let:",name);
+        }
+        console.log(name);
+        
+        //Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.
+        const food="noodles";
+        console.log(food);
+        food="Idly";
+
+    
+    </script>
+
+    
+</body>
+</html>
