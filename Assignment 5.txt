@@ -1,0 +1,45 @@
+The different datatypes available in javascript are:
+
+*Strings 
+*Number
+*Boolean
+*Arrays
+*Null and
+*Undefined
+*Objects
+
+Strings:
+
+A string (or a text string) is a series of characters like "Rahul".
+Strings are written with quotes. we can use single or double quotes.
+
+Number:
+
+JavaScript has only one type of numbers.
+Numbers can be written with, or without decimals.
+
+Boolean:
+
+Booleans can only have two values either true or false.
+
+Arrays:
+
+JavaScript arrays are written with square brackets.
+Array items are separated by commas.
+
+Null:
+
+In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+In JavaScript, the data type of null is an object.
+
+Undefined:
+
+In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+
+Objects:
+
+JavaScript objects are written with curly braces {}.
+Object properties are written as name:value pairs, separated by commas.
+
+
+
