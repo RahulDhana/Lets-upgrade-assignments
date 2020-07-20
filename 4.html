@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign 4</title>
+    <h1>Calculator Program</h1>
+    <script>
+        function addTwoNumbers(textBox1, textBox2){
+				var x=document.getElementById(textBox1).value;
+				var y=document.getElementById(textBox2).value;
+				var sum=0;
+				sum=Number(x)+Number(y);
+				alert("SUM is: " + sum);
+
+        }
+        function multiplytwoNumbers(textBox1, textBox2){
+        var x=document.getElementById(textBox1).value;
+		var y=document.getElementById(textBox2).value;
+        var product=1;
+        product=Number(x)*Number(y);
+        alert("Product is: " + product);
+        }
+        function SubtracttwoNumbers(textBox1, textBox2){
+        var x=document.getElementById(textBox1).value;
+		var y=document.getElementById(textBox2).value;
+        var difference;
+        difference=Number(x)-Number(y);
+        alert("Difference is: " + difference);
+        }
+        function DividetwoNumbers(textBox1, textBox2){
+        var x=document.getElementById(textBox1).value;
+		var y=document.getElementById(textBox2).value;
+        var quotient;
+        quotient=Number(x)/Number(y);
+        alert("quotient is: " + quotient);
+        }
+        function squareRoot(textBox1){
+            var x=document.getElementById(textBox1).value;
+		    var root;
+            root=Math.sqrt(Number(x));
+            alert("Root is: " + root);
+        }
+        function percentage(textBox1, textBox2)
+         {
+          var num=document.getElementById(textBox1).value;
+          var per=document.getElementById(textBox2).value;
+          var result;
+          result=(Number(num/100)*per);
+          alert("percentage is: " + result);
+         }
+    </script>
+</head>
+<body>
+    <b>Enter first Number: </b><br>
+	<input type="text" id="textIn1"/><br>
+	<b>Enter second Number: </b><br>
+	<input type="text" id="textIn2"/><br><br>
+    <input type="button" id="btnSum" value="Calculate SUM" onClick="addTwoNumbers('textIn1','textIn2')"/>
+    <input type="button" id="btnPro" value="Calculate product" onClick="multiplytwoNumbers('textIn1','textIn2')"/>
+    <input type="button" id="btnSub" value="Calculate Difference" onClick="SubtracttwoNumbers('textIn1','textIn2')"/>
+    <input type="button" id="btndiv" value="Calculate quotient" onClick="DividetwoNumbers('textIn1','textIn2')"/>
+    <input type="button" id="btnsqrt" value="Calculate Root" onClick="squareRoot('textIn1')"/>
+    <input type="button" id="btnprcnt" value="Calculate percentage" onClick="percentage('textIn1','textIn2')"/>
+    
+    
+    
+</body>
+</html>

@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assign 1</title>
-    <h2>To check whether the given no is odd or even</h2>
-    <script>
-         var a=parseInt(prompt('Enter the number: '));
-         function oddoreven() {
-             if (a%2==0){
-                 console.log('The number entered is ' +a+ ' and the number is even');
-
-             }
-             else{
-                console.log('The number entered is ' + a + ' and the number is odd');
-
-             }
-             return a;
-             
-         }
-    </script>
+    <title>1st Assign </title>
+    <h1>Program using for loop</h1>
 </head>
 <body>
     <script>
-        var ans=oddoreven();
-        console.log(ans);
-       
+       for(i=1;i<=100;i++){
+            if((i%3==0)&&(i%5!=0)) {
+                
+                console.log(`fizz`);
+             }
+        
+            if((i%5==0)&&(i%3!=0)){
+                
+                console.log(`buzz`);
+                }
+                
+            if((i%3==0)&&(i%5==0))
+                console.log(`fizzbuzz`);
+                
+
+            }
     </script>
     
 </body>

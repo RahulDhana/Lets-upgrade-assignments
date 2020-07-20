@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
-    <h2>Program to take the OS name and version</h2>
+    <title>Assign 2</title>
+    <h1>This program is for Destructuring</h1>
 </head>
 <body>
     <script>
-        var input=prompt('Enter the OS name and version:');
-        let b=input.split(" ");
-        let d=b.slice(0,1);
-        
-        let c=b.slice(1);
-        console.log('The OS name is '+d+' and the version is '+c+'.');
+        const student={
+            name:'Helsinki',
+            age:24,
+            projects:{
+                diceGame:'Two player dice game using javascript.'
+            }
+
+        }
+        const{name,age,projects:{diceGame}}=student;
+        console.log(name,age,diceGame);
     </script>
+    
 </body>
 </html>

@@ -3,46 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3</title>
-    <h2>This program is for grading system</h2>
-    
+    <title>Assign 3</title>
+    <h1>Shopping list program.</h1>
 </head>
 <body>
     <script>
-        //using conditional statement
-        var marks=prompt('Enter the mark:');
-        if(marks==50){
-            console.log('Marks are '+marks+' and grade is B');
-
-        }
-        else if(marks<50){
-            console.log('Marks are '+marks+' and grade is C');
-
-        }
-        else {
-            console.log('Marks are '+marks+' and grade is A');
-        }
-        //using switch case
-        
-        switch(true){
-        
-            case (marks==50):
-                
-                console.log('Marks are '+marks+' and grade is B');
-                break;
-            case (marks<50):
-                
-                console.log('Marks are '+marks+' and grade is C');
-                break;
-            default:
-                
-                 console.log('Marks are '+marks+' and grade is A');
-                 
-
-        }
-            
-        
-        
+        let shoppingList=['Fruits','vegetables','medicines','Groceries'];
+        console.log(shoppingList);
+        let shoppingBasket=shoppingList;
+        console.log(shoppingBasket);
+        shoppingBasket=['Sports items','Shampoo',...shoppingList,'Toys','Clothes.'];
+        console.log(shoppingBasket);
     </script>
     
 </body>
